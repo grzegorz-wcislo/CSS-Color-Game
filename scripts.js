@@ -154,7 +154,7 @@ var colors = {
 //Test
 
 function test() {
-    console.log(getRandomColor());
+    setActiveColor();
 }
 
 //Scripts
@@ -166,4 +166,10 @@ function getRandomColor() {
         if (Math.random() < 1/++count)
             color = prop;
     return color;
+}
+
+function setActiveColor() {
+    var colorName = getRandomColor();
+    document.getElementById("game").style.backgroundColor = colorName;
+    console.log(colorName);
 }
