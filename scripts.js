@@ -158,6 +158,12 @@ function test() {
     setActiveColor();
 }
 
+//Setup
+
+function setupGame() {
+    setActiveColor();
+}
+
 //Scripts
 
 function getRandomColor() {
