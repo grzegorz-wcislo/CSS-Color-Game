@@ -182,8 +182,23 @@ function setActiveColor() {
     document.getElementById("color-hex").innerHTML = colorName;
 }
 
+function goodGuess() {
+    console.log("success!");
+}
+
+function badGuess() {
+    console.log("fail!");
+}
+
 function checkGuess() {
     var userGuess = String(document.getElementById("user-guess").value);
     userGuess = userGuess.toLowerCase().replace(/\s/g,'');
     console.log(userGuess);
+    if (userGuess === colorName) {
+        goodGuess();
+    }
+    else {
+        wrongGuess();
+    }
+    setActiveColor();
 }
