@@ -11,7 +11,7 @@
 <body onload="setupGame()">
   <div id="game">
     <h1 id="color-hex"></h1>
-    <input type="text" name="Your Guess" id="user-guess">
+    <input type="text" name="Your Guess" id="user-guess" onkeydown="if (event.keyCode == 13) { checkGuess(); }">
     <button id="confirm-btn" onclick="checkGuess()">OK</button>
 
     <button onclick="test()">Test</button>
