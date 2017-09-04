@@ -10,6 +10,10 @@
 
 <body onload="setupGame()">
   <div id="game-canvas">
+    <div id="score-box">
+      <h1 id="score">0</h1>
+      <h2 id="tooltip"></h2>
+    </div>
     <div id="game">
       <h1 id="color-hex"></h1>
       <input type="text" name="Your Guess" id="user-guess" onkeydown="if (event.keyCode == 13) { checkGuess(); }">
