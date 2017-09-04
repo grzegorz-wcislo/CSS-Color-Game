@@ -189,7 +189,7 @@ function badGuess() {
 function checkGuess() {
     var userGuess = String(document.getElementById("user-guess").value);
     userGuess = userGuess.toLowerCase().replace(/\s/g,'');
-    if (userGuess === colorName) {
+    if (colors[userGuess] === colors[colorName]) {
         goodGuess();
     }
     else {
