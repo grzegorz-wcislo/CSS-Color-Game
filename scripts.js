@@ -145,7 +145,6 @@ var colors = {
     "turquoise": "#40e0d0",
     "violet": "#ee82ee",
     "wheat": "#f5deb3",
-    "white": "#ffffff",
     "whitesmoke": "#f5f5f5",
     "yellow": "#ffff00",
     "yellowgreen": "#9acd32"
@@ -172,6 +171,7 @@ function setActiveColor() {
     colorName = getRandomColor();
     document.getElementById("user-guess").value = "";
     document.getElementById("game-canvas").style.backgroundColor = colors[colorName];
+    document.getElementById("confirm-btn").style.backgroundColor = colors[colorName];
     document.getElementById("color-hex").innerHTML = colors[colorName];
 }
 
