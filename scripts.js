@@ -179,7 +179,7 @@ function setActiveColor() {
     colorName = getRandomColor();
     document.getElementById("user-guess").value = "";
     document.getElementById("game").style.backgroundColor = colorName;
-    document.getElementById("color-hex").innerHTML = colorName;
+    document.getElementById("color-hex").innerHTML = colors[colorName];
 }
 
 function goodGuess() {
