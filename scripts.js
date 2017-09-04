@@ -186,7 +186,7 @@ function goodGuess() {
     console.log("success!");
 }
 
-function badGuess() {
+function wrongGuess() {
     console.log("fail!");
 }
 
