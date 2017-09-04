@@ -1,4 +1,5 @@
 //List of Colors
+var colorName = "lime";
 var colors = {
     "aliceblue": "#f0f8ff",
     "antiquewhite": "#faebd7",
@@ -169,7 +170,7 @@ function getRandomColor() {
 }
 
 function setActiveColor() {
-    var colorName = getRandomColor();
+    colorName = getRandomColor();
     document.getElementById("game").style.backgroundColor = colorName;
     document.getElementById("color-hex").innerHTML = colorName;
 }
