@@ -163,7 +163,7 @@ function getRandomColor() {
     var color;
     var count = 0;
     for (var prop in colors)
-        if (Math.random() < 1/++count)
+        if (Math.random() < 1 / ++count)
             color = prop;
     return color;
 }
@@ -171,5 +171,5 @@ function getRandomColor() {
 function setActiveColor() {
     var colorName = getRandomColor();
     document.getElementById("game").style.backgroundColor = colorName;
-    console.log(colorName);
+    document.getElementById("color-hex").innerHTML = colorName;
 }
