@@ -177,13 +177,11 @@ function setActiveColor() {
 }
 
 function goodGuess() {
-    console.log("success!");
     document.getElementById("tooltip").innerHTML = "Good job!";
     score++;
 }
 
 function badGuess() {
-    console.log("fail!");
     document.getElementById("tooltip").innerHTML = "Not even close, it was: <br>" + colorName;
     score = 0;
 }
@@ -191,7 +189,6 @@ function badGuess() {
 function checkGuess() {
     var userGuess = String(document.getElementById("user-guess").value);
     userGuess = userGuess.toLowerCase().replace(/\s/g,'');
-    console.log(userGuess);
     if (userGuess === colorName) {
         goodGuess();
     }
