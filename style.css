@@ -46,6 +46,7 @@ html, body, #game-canvas {
 }
 
 #user-guess {
+  color: black;
   text-align: center;
   font-size: 26px;
   width: 80%;
