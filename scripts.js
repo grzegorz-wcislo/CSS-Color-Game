@@ -171,7 +171,7 @@ function getRandomColor() {
 function setActiveColor() {
     colorName = getRandomColor();
     document.getElementById("user-guess").value = "";
-    document.getElementById("game").style.backgroundColor = colorName;
+    document.getElementById("game").style.backgroundColor = colors[colorName];
     document.getElementById("color-hex").innerHTML = colors[colorName];
 }
 
