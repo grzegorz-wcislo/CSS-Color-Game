@@ -151,13 +151,6 @@ var colors = {
     "yellowgreen": "#9acd32"
 }
 
-
-//Test
-
-function test() {
-    setActiveColor();
-}
-
 //Setup
 
 function setupGame() {
@@ -186,7 +179,7 @@ function goodGuess() {
     console.log("success!");
 }
 
-function wrongGuess() {
+function badGuess() {
     console.log("fail!");
 }
 
@@ -198,7 +191,7 @@ function checkGuess() {
         goodGuess();
     }
     else {
-        wrongGuess();
+        badGuess();
     }
     setActiveColor();
 }
