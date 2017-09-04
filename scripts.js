@@ -149,3 +149,21 @@ var colors = {
     "yellow": "#ffff00",
     "yellowgreen": "#9acd32"
 }
+
+
+//Test
+
+function test() {
+    console.log(getRandomColor());
+}
+
+//Scripts
+
+function getRandomColor() {
+    var color;
+    var count = 0;
+    for (var prop in colors)
+        if (Math.random() < 1/++count)
+            color = prop;
+    return color;
+}
