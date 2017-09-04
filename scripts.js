@@ -151,7 +151,9 @@ var colors = {
 
 //Setup
 
+var score = 0;
 function setupGame() {
+    score = 0;
     setActiveColor();
 }
 
@@ -176,12 +178,14 @@ function setActiveColor() {
 
 function goodGuess() {
     console.log("success!");
-    document.getElementById("tooltip").innerHTML = "Good job";
+    document.getElementById("tooltip").innerHTML = "Good job!";
+    score++;
 }
 
 function badGuess() {
     console.log("fail!");
     document.getElementById("tooltip").innerHTML = "Not even close, it was: <br>" + colorName;
+    score = 0;
 }
 
 function checkGuess() {
@@ -194,5 +198,6 @@ function checkGuess() {
     else {
         badGuess();
     }
+    document.getElementById("score").innerHTML = score;
     setActiveColor();
 }
