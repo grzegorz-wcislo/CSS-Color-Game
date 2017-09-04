@@ -176,10 +176,12 @@ function setActiveColor() {
 
 function goodGuess() {
     console.log("success!");
+    document.getElementById("tooltip").innerHTML = "Good job";
 }
 
 function badGuess() {
     console.log("fail!");
+    document.getElementById("tooltip").innerHTML = "Not even close, it was: <br>" + colorName;
 }
 
 function checkGuess() {
