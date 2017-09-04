@@ -175,3 +175,9 @@ function setActiveColor() {
     document.getElementById("game").style.backgroundColor = colorName;
     document.getElementById("color-hex").innerHTML = colorName;
 }
+
+function checkGuess() {
+    var userGuess = String(document.getElementById("user-guess").value);
+    userGuess = userGuess.toLowerCase().replace(/\s/g,'');
+    console.log(userGuess);
+}
