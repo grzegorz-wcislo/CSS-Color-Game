@@ -39,6 +39,10 @@ html, body, #game-canvas {
   text-align: center;
 }
 
+#previous-color {
+  font-weight: 700;
+}
+
 #game {
   margin-top: 20px;
   width: 320px;

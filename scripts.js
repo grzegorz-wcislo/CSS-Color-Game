@@ -182,7 +182,7 @@ function goodGuess() {
 }
 
 function badGuess() {
-    document.getElementById("tooltip").innerHTML = "Not even close. It was: <br>" + colorName;
+    document.getElementById("tooltip").innerHTML = "Not even close. It was: <br><span id='previous-color' style='color: " + colorName + ";'>" + colorName + "</span>";
     score = 0;
 }
 
