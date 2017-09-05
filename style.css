@@ -6,6 +6,9 @@
   color: white;
   font-family: "Open Sans", serif;
   font-weight: 300;
+
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 
 html, body, #game-canvas {
