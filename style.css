@@ -11,12 +11,8 @@
   transition: all 200ms ease-in-out;
 }
 
-html, body, #game-canvas {
-  height: 100%;
-  width: 100%;
-}
-
 #game-canvas {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
